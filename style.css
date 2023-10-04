@@ -1,0 +1,124 @@
+body{
+    font-family: sans-serif;
+}
+
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: #1098ad
+}
+
+h2{
+    font-size: 24px;
+    color: #1098ad;
+    margin-left: 10px;
+}
+
+h3{
+    font-size: 16px;
+    color: #1098ad;
+    margin-left: 10px;
+}
+
+a:link{
+    color: #1098ad;
+    text-decoration: none;
+}
+
+p{
+    font-size: 16px;
+    color: #444;
+    margin-left: 10px;
+}
+
+header{
+    background-color: #f0efef;
+    border-top: 5px solid #1098ad;
+    margin-bottom: 25px;
+}
+footer{
+    background-color: #f0efef;
+    border-top: 5px solid #1098ad;
+}
+
+.text{
+    background-color: #f0efef;
+    border-top: 1px solid #1098ad;
+    border-bottom: 1px solid #1098ad;
+}
+
+.napkin-image{
+    margin-bottom: 25px;
+}
+
+.ourProduction{
+    text-align: center;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.item{
+    flex-grow:calc(1);
+}
+.item2{
+    margin-right:  150px;
+}
+
+.contacts{
+    text-align: right;
+    justify-content: space-between;
+}
+
+.contant-end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.telephone{
+    display: flex;
+    justify-content: end;
+    align-items:center;
+}
+.email{
+    display: flex;
+    align-items:center;
+    justify-content: end;
+}
+
+.telephone-end{
+    display: flex;
+    align-items:center;
+    justify-content: end;
+}
+
+.email-end{
+    display: flex;
+    align-items:center;
+    justify-content: end;
+}
+
+.facebook{
+    display: flex;
+    align-items:center;
+    justify-content: end;
+}
+.napkin{
+    width: 500px;
+    height: 500px;
+}
+
+.machine{
+    width: 200;
+    height: 200;
+}
+
+.text{
+    background-color: #f0efef;
+    margin-bottom: 25px;
+}
