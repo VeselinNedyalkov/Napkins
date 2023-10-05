@@ -1,6 +1,5 @@
 body{
     font-family: sans-serif;
-    background-color: #a0d3fc;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -12,12 +11,14 @@ h1{
     color: #1098ad;
     margin-bottom: 50px;
     margin-top: 50px;
+    
 }
 
 h2{
     font-size: 24px;
     color: #1098ad;
     margin-left: 10px;
+    text-decoration: underline;
 }
 
 h3{
@@ -27,7 +28,7 @@ h3{
 
 h4{
     font-size: 20px;
-    color: #a0d3fc;
+    color: #1098ad;
     margin-left: 10px;
 }
 
@@ -38,16 +39,18 @@ a:link{
 
 p{
     font-size: 16px;
-    color: #a0d3fc;
+    color: #1098ad;
     margin-left: 10px;
+    line-height: 24px;
 }
 
 header{
     border-top: 10px solid #1098ad;
     margin-bottom: 80px;
+    background-color: #cef6fc;
 }
 footer{
-    background-color: #1098ad;
+    background-color: #cef6fc;
     border-top: 5px solid #1098ad;
 }
 
@@ -57,11 +60,11 @@ footer{
 }
 
 .production{
-    margin-left: 10px;
+    margin-left: 50px;
 }
 
 .text{
-    background-color: #1098ad;
+    background-color: #cef6fc;
     border-top: 1px solid #1098ad;
     border-bottom: 1px solid #1098ad;
     margin-bottom: 150px;
@@ -77,16 +80,22 @@ footer{
     margin-bottom: 150px;
 }
 
-.ourProduction{
-    text-align: center;
-}
 
 .information{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 25px;
+    justify-content: center;
+    margin-bottom: 25x;
 }
+
+.ourProduction{
+    text-align: center;
+    justify-content: flex-end;
+}
+/* 
+.information-flex{
+    justify-content: left;
+} */
 
 .item{
     flex-grow:calc(1);
