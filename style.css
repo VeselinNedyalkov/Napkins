@@ -1,158 +1,243 @@
-body{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+body {
     font-family: sans-serif;
     margin-left: 100px;
     margin-right: 100px;
 }
 
 
-h1{
+h1 {
     font-size: 44px;
     text-align: center;
     color: #1098ad;
     margin-bottom: 50px;
     margin-top: 50px;
-    
 }
 
-h2{
+h2 {
     font-size: 24px;
     color: #1098ad;
-    margin-left: 10px;
+    margin-bottom: 50px;
     text-decoration: underline;
 }
 
-h3{
+h3 {
     font-size: 16px;
     color: #1098ad;
 }
 
-h4{
+h4 {
     font-size: 20px;
     color: #1098ad;
     margin-left: 10px;
 }
 
-a:link{
+a {
     color: #1098ad;
     text-decoration: none;
+    text-decoration: underline;
 }
 
-p{
+p {
     font-size: 16px;
     color: #1098ad;
     margin-left: 10px;
     line-height: 24px;
 }
 
-header{
+header {
     border-top: 10px solid #1098ad;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     background-color: #cef6fc;
+    min-height: 300px;
 }
-footer{
+
+footer {
     background-color: #cef6fc;
     border-top: 5px solid #1098ad;
 }
 
-.info{
-    color: #1098ad;
-    margin-right: 10px;
+.logo{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.production{
+.production {
     margin-left: 50px;
+    width: auto;
+    height: 300px;
 }
 
-.text{
+.text {
     background-color: #cef6fc;
     border-top: 1px solid #1098ad;
     border-bottom: 1px solid #1098ad;
     margin-bottom: 150px;
+    padding: 2em;
 }
 
-.info-text{
+.info-text {
     margin-left: 200px;
     margin-right: 300px;
 }
 
+.machine{
+    max-width:  100px;
+    height:  auto;
+    
+}
 
-.napkin-image{
-    margin-bottom: 150px;
+.napkin-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-self:  center;
+    margin-bottom: 100px;
+}
+
+.napkin{
+    object-fit:scale-down;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 
-.information{
+.information {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25x;
+    align-items:center;
+    justify-content:space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
 }
 
-.ourProduction{
+
+.information2{
+    justify-content: right;
+}
+
+.ourProduction {
     text-align: center;
     justify-content: flex-end;
 }
-/* 
-.information-flex{
-    justify-content: left;
-} */
 
-.item{
-    flex-grow:calc(1);
-}
-.item2{
-    margin-right:  150px;
-}
 
-.contacts{
+.contacts {
     text-align: right;
+}
+
+.contant-end {
+    display: flex;
     justify-content: space-between;
 }
 
-.contant-end{
+.telephone {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.telephone{
+.email {
     display: flex;
-    justify-content: end;
-    align-items:center;
-}
-.email{
-    display: flex;
-    align-items:center;
-    justify-content: end;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.telephone-end{
+.telephone-end {
     display: flex;
-    align-items:center;
-    justify-content: end;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.email-end{
+.email-end {
     display: flex;
-    align-items:center;
-    justify-content: end;
+    align-items: center;
+    justify-content: flex-end;
     margin-right: 10px;
 }
 
-.facebook{
+.facebook {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: end;
 }
-.napkin{
+
+.napkin {
     width: 500px;
     height: 500px;
 }
 
-.our{
+.our {
     margin-bottom: 50px;
 }
 
-@font-face {
-    font-family: "Lato";
-    src: url();
+
+@media only screen and  (max-width: 900px) {
+
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .production{
+        margin-left: 0px;
+    }
+
+    .text{
+        margin-bottom: 80px;
+    }
+
+    .info-text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .napkin-image{
+        margin-bottom: 50px;
+    }
+
+    .napkin{
+        object-fit: contain;
+    }
+
+    .information{
+        display: grid;
+        justify-items:center;
+        justify-content: center;
+    }
+
+    .contacts{
+        display: flex;
+        justify-items:center;
+        text-align: left;
+        gap: 100px;
+    }
+
+    .contant-end{
+        display: grid;
+        justify-items:center;
+        justify-content: center;
+    }
 }
+
