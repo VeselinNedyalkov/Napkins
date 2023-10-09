@@ -223,10 +223,11 @@ footer {
     }
 
     .contacts{
-        display: flex;
+        margin-top: 10px;
+        display: grid;
         justify-items:center;
         text-align: left;
-        gap: 100px;
+        gap: 10px;
     }
 
     .contant-end{
