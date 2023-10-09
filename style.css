@@ -101,13 +101,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     justify-self:  center;
+    justify-items: center;
+    gap: 50px;
     margin-bottom: 100px;
 }
 
 .napkin{
     object-fit:scale-down;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 
@@ -171,17 +173,70 @@ footer {
     justify-content: end;
 }
 
-.napkin {
-    width: 500px;
-    height: 500px;
-}
-
 .our {
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 440px){
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-@media only screen and  (max-width: 900px) {
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 8px;
+    }
+
+    .production{
+        margin-left: 0px;
+    }
+
+    .text{
+        margin-bottom: 80px;
+    }
+
+    .info-text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .napkin-image{
+        margin-bottom: 50px;
+    }
+
+    .napkin{
+        object-fit: contain;
+    }
+
+    .information{
+        display: grid;
+        justify-items:center;
+        justify-content: center;
+    }
+
+    .contacts{
+        display: flex;
+        justify-items:center;
+        text-align: left;
+        gap: 100px;
+    }
+
+    .contant-end{
+        display: grid;
+        justify-items:center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 441px) and (max-width: 900px){
 
     body{
         margin-left: 10px;
@@ -240,4 +295,7 @@ footer {
         justify-content: center;
     }
 }
+
+
+
 
