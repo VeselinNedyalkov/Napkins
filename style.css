@@ -19,15 +19,13 @@ h1 {
     font-size: 44px;
     text-align: center;
     color: #1098ad;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 h2 {
     font-size: 24px;
     color: #1098ad;
     margin-bottom: 50px;
-    text-decoration: underline;
 }
 
 h3 {
@@ -56,9 +54,9 @@ p {
 
 header {
     border-top: 10px solid #1098ad;
-    margin-bottom: 100px;
     background-color: #cef6fc;
-    min-height: 300px;
+    min-height: 100px;
+    margin-bottom: 50px;
 }
 
 footer {
@@ -80,8 +78,6 @@ footer {
 
 .text {
     background-color: #cef6fc;
-    border-top: 1px solid #1098ad;
-    border-bottom: 1px solid #1098ad;
     margin-bottom: 150px;
     padding: 2em;
 }
@@ -99,7 +95,7 @@ footer {
 
 .napkin-image {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: 1fr 1fr;
     justify-self:  center;
     justify-items: center;
     gap: 50px;
@@ -119,12 +115,12 @@ footer {
     justify-content:space-between;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 100px;
 }
 
 
 .information2{
     justify-content: right;
+    gap: 50px;
 }
 
 .ourProduction {
@@ -177,7 +173,8 @@ footer {
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 440px){
+@media screen and (min-width: 10px) and (max-width: 600px){
+
     body{
         margin-left: 10px;
         margin-right: 10px;
@@ -209,25 +206,24 @@ footer {
     }
 
     .napkin-image{
-        margin-bottom: 50px;
+        margin-bottom: 25px;
+        grid-template-columns: auto;
     }
 
     .napkin{
         object-fit: contain;
+        max-width: 200px;
+        max-height: 200px;
     }
 
     .information{
         display: grid;
-        justify-items:center;
+        justify-items: center;
         justify-content: center;
     }
 
     .contacts{
-        margin-top: 10px;
-        display: grid;
-        justify-items:center;
-        text-align: left;
-        gap: 10px;
+        display: block;
     }
 
     .contant-end{
@@ -235,59 +231,29 @@ footer {
         justify-items:center;
         justify-content: center;
     }
-}
 
-@media screen and (min-width: 441px) and (max-width: 900px){
-
-    body{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    h1{
-        font-size: 25px;
-    }
-
-    h2{
-        font-size: 22px;
-    }
-
-    p{
-        font-size: 14px;
-    }
-
-    .production{
-        margin-left: 0px;
+    .telephone{
+        justify-content: center;
     }
 
     .text{
-        margin-bottom: 80px;
+        padding: 1em;
     }
+}
 
-    .info-text{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .napkin-image{
-        margin-bottom: 50px;
-    }
-
-    .napkin{
-        object-fit: contain;
-    }
-
+@media screen and (min-width: 601px) and (max-width: 800px){
     .information{
         display: grid;
-        justify-items:center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .telephone{
         justify-content: center;
     }
 
     .contacts{
-        display: flex;
-        justify-items:center;
-        text-align: left;
-        gap: 100px;
+        display: block;
     }
 
     .contant-end{
